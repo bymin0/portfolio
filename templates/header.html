@@ -1,0 +1,17 @@
+<script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
+
+<div id="header">
+    <a href="/"><img src="{{ url_for('static', filename='logo/min_logo512.png') }}"/></a>
+    <div class="right">
+        <a href="https://github.com/bymin0" data-toggle="tooltip" title="github">
+            <img src="{{ url_for('static', filename='logo/githublogo.png') }}"/>
+        </a>
+        <a href="https://bymin0.github.io/" data-toggle="tooltip" title="blog">
+            <img src="{{ url_for('static', filename='logo/bloglogo.png') }}"/>
+        </a>
+    </div>
+</div>

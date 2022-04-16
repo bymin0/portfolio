@@ -1,0 +1,25 @@
+/*  hide scroll bar but while still being able to scroll  */
+body, html {
+    -ms-overflow-style: none; /* Internet Explorer, Edge */
+    scrollbar-width: none; /* Firefox */
+    overflow-y: scroll;
+}
+body::-webkit-scrollbar { display: none; } /*Chrome, Opera, Safari*/
+
+#pagescroll {
+    margin-top: 70px;
+    height: calc(100vh - 70px);
+}
+.section { height: 100%; }
+.main {
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main > div { width: 38vw; margin: 20px; }
+.two img { float: right; }
+.main img { height: 150px; }
+.about {
+    height: calc(100% - 50px);
+}
