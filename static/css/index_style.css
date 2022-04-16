@@ -17,9 +17,74 @@ body::-webkit-scrollbar { display: none; } /*Chrome, Opera, Safari*/
     flex-direction: column;
     align-items: center;
 }
-.main > div { width: 38vw; margin: 20px; }
-.two img { float: right; }
-.main img { height: 150px; }
+.main > div { width: 50%; margin: 20px;}
+.main h1 { font-size: 8em; }
+.main p {
+    font-size: 75px;
+    display: inline;
+}
+
+.pf {
+    height: 50%;
+    display: flex;
+    padding: 20px 100px;
+}
+.pf > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* thumbnail */
+.img {
+    width: 45%;
+    background-color: #7f6781;
+}
+.img p { /* 썸네일 완성 시 지워질 예정 */
+    color: white;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+/* description */
+.dsc {
+    width: 55%;
+}
+.dsc p { font-size: 20px; }
+button {
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s; 
+    color: #7a4e82;
+    background: white;
+    border: 1px solid;
+    border-radius: 20px;
+    margin: 0 8px;
+    padding: 5px 13px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+button:hover {
+    color: white;
+    background: #7f6781;
+}
+
 .about {
     height: calc(100% - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.about > div { margin: 0 20px; }
+.profile {
+    background: linear-gradient(45deg,#ffcae5 50%,#a973c2,rgb(158, 152, 238));
+    box-shadow: 0 4px 6px;
+}
+.profile img {
+    height: 450px;
+    margin: 20px;
+    background-color: white;
+}
+.profile p {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.me > * { margin: 50px 0; }
+.me h3 { font-family: 'Noto Sans KR', sans-serif; }
