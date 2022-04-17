@@ -88,3 +88,49 @@ button:hover {
 }
 .me > * { margin: 50px 0; }
 .me h3 { font-family: 'Noto Sans KR', sans-serif; }
+
+/* 모바일에 따른 css 변경 */
+@media screen and ( max-width: 575px ) {
+    /* 세로 */
+    @media (orientation: portrait) {
+        .main h1 { font-size: 50px; }
+        .main p { font-size: 32px; }
+        .pf {  padding: 10px 20px; }
+        .profile img {
+                height: 200px;
+                margin: 10px;
+            }
+        .profile p { font-size: 28px; }
+        }
+    /* 가로 */
+    @media(orientation: landscape) {
+        .main h1 { font-size: 50px; }
+        .main p { font-size: 32px; }
+        .pf {  padding: 10px 20px; }
+        .profile img {
+            height: 150px;
+            margin: 10px;
+        }
+        .profile p {
+            font-size: 28px;
+        }
+    }
+}
+/* tablet */
+@media screen and ( max-width: 768px ) {
+    @media (orientation: portrait) {
+        .main h1 { font-size: 30px; }
+        .main p { font-size: 32px; }
+        .pf {  padding: 10px 20px; }
+        }
+    
+    @media(orientation: landscape) {
+        .profile img {
+            height: 150px;
+            margin: 10px;
+        }
+        .profile p {
+            font-size: 28px;
+        }
+    }
+}

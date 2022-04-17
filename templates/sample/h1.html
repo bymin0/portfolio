@@ -26,82 +26,27 @@
     top: 52vh;
     right: 25vw;
 }
-#divBox { 
-			width: 100px;
-			height: 50px;
-			border: 1px solid lightgray;
-			margin: 10px;
-		}
-		.para {
-			font-weight: bold;
-			margin-top: 15px;
-		}
-        .about {
-            margin-top: 800px;
-            width: 100%;
-            height: 900px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+@media screen and ( max-width: 768px ) {
+    .main h1 {
+        font-size: 50px;
+    }
+    .main p {
+        font-size: 32px;
+    }
+}
+/* 가로일 경우 */
+@media(orientation: landscape) {
+        body {
+          color: rebeccapurple;
         }
-        .about > div { margin: 0 20px; }
-        .profile {
-            background: linear-gradient(45deg,#ffcae5 50%,#a973c2,rgb(158, 152, 238));
-            box-shadow: 0 4px 6px;
-        }
-        .profile img {
-            height: 450px;
-            margin: 20px 20px 20px;
-            background-color: white;
-        }
-        .profile p {
-            font-size: 30px;
-            font-weight: bold;
-            text-align: center;
-        }
-        .me > * { margin: 50px 0; }
-        .me h3 {font-family: 'Noto Sans KR', sans-serif;}
+      }
     </style>
-    <script>
-		$(function() {
-			$("button").on("click", function() {
-				var paraPosition = $(".para").offset();		// id가 "para"인 요소의 위치 정보를 저장함.
-				var str = "p 요소의 위치는<br>";
-				str += "left가 " + paraPosition.left + "픽셀이고, ";	// id가 "para"인 요소의 left 위치를 반환함.
-				str += "top이 " + paraPosition.top + "픽셀입니다.";		// id가 "para"인 요소의 top 위치를 반환함.
-				$("#text").html(str);
-                alert($("p").text());
-			});
-		});
-        var min = $('h2');
-	</script>
 </head>
 <body>
     <div class="main">
         <h1 class="min">MIN<p>`s</p></h1>
         <h1 class="lio">PORTFOLIO</h1>
     </div>
-    <h2>hello</h2>
-    <div id="divBox">
-		<p class="para">p 요소</p>
-	</div>
-	<button>요소의 위치 정보</button>
-	<p id="text"></p>
-    <div class="about">
-        <div class="profile">
-            <img src="E:\민짱\Portfolio\static\logo\dobermin.png" alt="">
-            <!-- <div class="txt"> -->
-                <p>MIN</p>
-            <!-- </div> -->
-        </div>
-        <div class="passion">
-            <div class="me">
-                <h1>about me</h1>
-                <h3>- 화려해질 예정</h3>
-            </div>
-            
-        </div>
-    </div>
-  
+
 </body>
 </html>
