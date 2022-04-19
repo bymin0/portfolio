@@ -14,10 +14,15 @@
 </head>
 <body>
     {% include 'header.html' %}
-    <div class="thumbnail"></div>
-    <div class="post">
-        <h1>this is mintube!!</h1>
+    <div class="thumbnail">
+        <img src="{{ url_for('static', filename='logo/min_logo.png') }}">
     </div>
-    {% include 'footer.html' %}
+    <div class="post">
+        <h1>title: this is mintube!!</h1>
+        <div class="detail">
+            내용내용
+        </div>
+        {% include 'footer.html' %}
+    </div>
 </body>
 </html>

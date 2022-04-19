@@ -41,12 +41,18 @@
         }
       }
     </style>
+    <script>
+        function search() {
+            var text = $('.in').val()
+            location.href = "https://www.google.com/search?q="+text
+        }
+    </script>
 </head>
 <body>
     <div class="main">
         <h1 class="min">MIN<p>`s</p></h1>
         <h1 class="lio">PORTFOLIO</h1>
     </div>
-
+    <input class="in" type="text"> <button onclick="search()">search</button>
 </body>
 </html>
