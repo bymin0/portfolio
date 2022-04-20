@@ -13,10 +13,11 @@
 .thumbnail {
     position: fixed;
     z-index: -999;
-    width: 100%;
+    width: 100vw;
     background-color: rgb(197, 185, 197);
     opacity: 0.9;
 }
+.thumbnail img { width: 100vw; }
 .post {
     width: 100%;
     position:absolute;
@@ -31,4 +32,18 @@
     background-color: white;
     padding: 0 20px;
     height: 1000px;/* 임시 */
+}
+
+.notice {
+    position: fixed;
+    z-index: 999;
+    bottom: 0px;
+    padding: 10px;
+    width: 100vw;
+}
+.notice img {
+    width: 20px;
+}
+.notice button {
+    float: right;
 }

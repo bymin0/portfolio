@@ -49,21 +49,7 @@ body::-webkit-scrollbar { display: none; } /*Chrome, Opera, Safari*/
     width: 55%;
 }
 .dsc p { font-size: 20px; }
-button {
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s; 
-    color: #7a4e82;
-    background: white;
-    border: 1px solid;
-    border-radius: 20px;
-    margin: 0 8px;
-    padding: 5px 13px;
-    font-family: 'Noto Sans KR', sans-serif;
-}
-button:hover {
-    color: white;
-    background: #7f6781;
-}
+
 
 .about {
     height: calc(100% - 50px);

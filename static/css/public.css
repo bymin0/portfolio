@@ -22,6 +22,21 @@ body,html {
     margin: 0 5px;
     width: 30px;
 }
+button {
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s; 
+    color: #7a4e82;
+    background: white;
+    border: 1px solid;
+    border-radius: 20px;
+    margin: 0 8px;
+    padding: 5px 13px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+button:hover {
+    color: white;
+    background: #7f6781;
+}
 .footer {
     background-color: rgb(182, 175, 184);
     height: 50px;

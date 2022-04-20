@@ -11,22 +11,26 @@
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/second.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/public.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='js/href.js') }}"></script>
 </head>
 <body>
     {% include 'header.html' %}
     <div class="thumbnail">
         <img src="{{ url_for('static', filename='logo/min_logo.png') }}">
     </div>
-
     <div class="post">
         <h1>title: this is community!!</h1>
         <div class="detail">
             내용내용
-        </div>
-        
+        </div>       
         {% include 'footer.html' %}
     </div>
-
+    <div class="notice">
+        <a href="javascript:history.back();" data-toggle="tooltip" title="뒤로가기">
+            <img src="{{ url_for('static', filename='design/back.png') }}" alt="">
+        </a>
+        <button>사이트 바로가기</button>
+    </div>
     
     
 </body>
